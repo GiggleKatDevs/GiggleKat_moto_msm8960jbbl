@@ -1,4 +1,4 @@
-#ifneq ($(TARGET_BOARD_PLATFORM),msm8960
+ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),breakthis_itbreaksthebuild)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 # ---------------------------------------------------------------------------------
@@ -53,4 +53,4 @@ LOCAL_MODULE:= libdashplayer
 LOCAL_MODULE_TAGS := eng
 
 include $(BUILD_SHARED_LIBRARY)
-#endif
+endif
